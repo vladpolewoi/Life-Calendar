@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  font-family: $font;
+  color: $font-color;
+}
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+.flex {
+  display: flex;
+}
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.error {
+  color: $red;
+  font-size: 12px;
+}
+
+.button {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid #fff;
+  font-size: 14px;
+  font-family: $font-thin;
+  cursor: pointer;
+  &:hover {
+    color: $background-color;
+    background-color: $font-color;
+  }
+}
+.input {
+  border: 1px solid $white;
+  background: none;
+  color: $font-color;
+  padding: 0 10px;
+}

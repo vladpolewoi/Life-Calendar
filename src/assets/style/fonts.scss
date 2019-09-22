@@ -1,0 +1,4 @@
+@import './mixins.scss';
+
+@include font-face('Montserrat', './../fonts/Montserrat-Regular.ttf');
+@include font-face('Montserrat-Thin', './../fonts/Montserrat-Thin.ttf');
