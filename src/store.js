@@ -21,6 +21,7 @@ export default new Vuex.Store({
   mutations: {
     SET_BIRTH_DATE(state, date) {
       state.birthDate = date
+      localStorage.date = date
     }
   },
   actions: {

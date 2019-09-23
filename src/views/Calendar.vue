@@ -3,7 +3,6 @@
     div.title You are {{ years }} years old
     div.flex
       div.number-row(v-for="index in 10") {{ index }}
-    
     div.calendar
       div.calendarNumberColumn.column-flex
         div.number-column(v-for="index in 10") {{ index * 10 - 10 }}
@@ -17,6 +16,7 @@
           }`
         )
           div.month__content {{ birthYear + (row * 10 - 11 + year) }}
+    router-link.small(to="/") change birth date
 </template>
 
 <script>
@@ -117,5 +117,9 @@ export default {
 .calendarNumberColumn {
   position: absolute;
   left: -20px;
+}
+.small {
+  font-size: 12px;
+  margin-top: 10px;
 }
 </style>

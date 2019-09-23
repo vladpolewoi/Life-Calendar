@@ -9,7 +9,11 @@
 import MHeader from './components/MHeader'
 export default {
   name: 'App',
-  components: { MHeader }
+  components: { MHeader },
+  mounted() {
+    const birthDate = localStorage.date
+    this.$store.dispatch('setBirthDate', birthDate)
+  }
 }
 </script>
 
